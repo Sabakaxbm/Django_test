@@ -1,0 +1,13 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    text_decoration: None;
+    list-style: none;
+
+}
+.form_renew {
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+}
