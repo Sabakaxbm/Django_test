@@ -46,6 +46,10 @@
                     <li><a href="{% url 'author_update' author.pk %}"> Update </a></li>
                     <li><a href="{% url 'author_delete' author.pk %}"> Delete </a></li>
                 {% endif %}
+                {% if book.pk %}
+                    <li><a href="{% url 'book_update' book.pk %}"> Update </a></li>
+                    <li><a href="{% url 'book_delete' book.pk %}"> Delete </a></li>
+                {% endif %}
             </ul>
           {% endif %}
 

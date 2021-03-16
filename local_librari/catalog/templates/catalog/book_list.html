@@ -15,5 +15,11 @@
     </ul>
     {% else %}
       <p>There are no books in the library.</p>
-    {% endif %} 
+    {% endif %}
+
+    {% if perms.catalog.can_mark_returned %}
+        <ul class="sidebar-nav">
+            <li>Create author: <a href="{% url 'book_create' %}">Create</a></li>
+        </ul>
+    {% endif %}
 {% endblock %}
